@@ -1,0 +1,90 @@
+/** Button show aside the viewport*/
+.brand-feedback-button {
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+    margin-left: 0;
+    width: 200px;
+    margin-right: 2px !important;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px darkorange #000;
+    text-align: center;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    right: -80px;
+}
+
+
+.brand-feedback-button:hover {
+    background-color: black;
+    height: 40px;
+    border-style: double;
+
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.grow-wrap {
+    /* easy way to plop the elements on top of each other and have them both sized based on the tallest one's height */
+    display: grid;
+}
+
+.grow-wrap::after {
+    /* Note the weird space! Needed to preventy jumpy behavior */
+    content: attr(data-replicated-value) " ";
+
+    /* This is how textarea text behaves */
+    white-space: pre-wrap;
+
+    /* Hidden from view, clicks, and screen readers */
+    visibility: hidden;
+}
+
+.grow-wrap>textarea {
+    /* You could leave this, but after a user resizes, then it ruins the auto sizing */
+    resize: none;
+
+    /* Firefox shows scrollbar on growth, you can hide like this. */
+    overflow: hidden;
+}
+
+.grow-wrap>textarea,
+.grow-wrap::after {
+    border: 1px solid black;
+    padding: 0.5rem;
+    font: inherit;
+
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.brandFeedbackWidgetModalContent {
+
+    border-radius: 5%;
+    border-color: #000;
+    border-width: 5px;
+}
+
+.brand-logo {
+    height: 25%;
+    width: 50%;
+    border-radius: 10%;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
