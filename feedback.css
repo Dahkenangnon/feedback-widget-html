@@ -6,7 +6,7 @@
     margin-left: 0;
     width: 200px;
     margin-right: 2px !important;
-    background-color: black;
+    background-color: green;
     color: #fff;
     font-size: 20px;
     font-weight: bold;
@@ -19,7 +19,7 @@
 
 
 .brand-feedback-button:hover {
-    background-color: black;
+    background-color: greenyellow;
     height: 40px;
     border-style: double;
 
@@ -76,8 +76,8 @@
 }
 
 .brand-logo {
-    height: 25%;
-    width: 50%;
+    height: 30px;
+    width: 50px;
     border-radius: 10%;
 }
 
